@@ -1,8 +1,8 @@
 package main
 
 import (
-	logic "GinTest/Logic"
-	"GinTest/models"
+	logic "Gin/Logic"
+	"Gin/models"
 	"encoding/json"
 	"fmt"
 	"github.com/gin-gonic/gin"
@@ -32,7 +32,7 @@ func test(c *gin.Context) {
 	accessStruct :=logic.CheckAccess{Items: access}
 	accessString,_ := json.Marshal(accessStruct)
 
-	logicS := logic.LogicStruct{
+	logicS := logic.AuthSt{
 		Authorization: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1OTU4MTUwNDgsInVzZXJpZCI6IjU0OSIsInRpbWVvdXQiOjUwNDAwLCJyZXF1ZXN0X3V1aWQiOiIxNTk1ODE1MDQ4LjE4ODgtMTg3NSJ9.idR4xjGDWnfSCzVU5kAeVpuRNwGHdR0LqynD5ELmxN4",
 		JCustomerUUID: "428cff2385ebe526"}
 	responseForm := logic.CheckAccessResponse{}
