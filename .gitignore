@@ -1,0 +1,11 @@
+/public/hot
+/public/storage
+/storage
+/vendor
+/public/logs
+/consumers
+/upload
+/download
+/.idea
+/.vscode
+/.vagrant
