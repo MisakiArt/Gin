@@ -1,0 +1,6 @@
+package AutoModelCommand
+
+func main()  {
+
+
+}
